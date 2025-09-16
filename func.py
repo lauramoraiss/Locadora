@@ -16,16 +16,8 @@ def cadastro():
             print('\n')
             nome = input("\nInsira seu nome: ")
             print('')
-            idade = int("\nInsira sua idade: ")
-            print('')
             cpf = int(input("\nInsira seu cpf: "))
-            print('')
-            cidade = input("\nInsira sua cidade: ")
-            print('')
-            estado = input("\nInsira seu estado: ")
-
-
-        
+            
 
         if resp1 == 2:
             print("•–––––– ᴠᴏᴄê ꜱᴇʟᴇᴄɪᴏɴᴏᴜ ꜰɪʟᴍᴇ ––––––•")
@@ -60,9 +52,36 @@ def listar():
 
     
     if resp2 == 1:
-        print("")
+        print("•–––––– ʟɪꜱᴛᴀ ᴅᴇ ᴄʟɪᴇɴᴛᴇꜱ ᴄᴀᴅᴀꜱᴛʀᴀᴅᴏꜱ ––––––•")
+        print('\n')
+
+        if len (Cliente) == 0:
+            print("Nenhum cliente cadastrado encontrado")
+
+        else:
+            for chave, valor in Cliente.items():
+                print(f"{chave}° - \t")
 
 
+    if resp2 == 2:
+        print("•–––––– ʟɪꜱᴛᴀ ᴅᴇ ꜰɪʟᴍᴇꜱ ᴄᴀᴅᴀꜱᴛʀᴀᴅᴏꜱ ––––––•")
+        print('\n')
+
+        if len (Filme) == 0:
+            print("Nenhum filme cadastrado encontrado")
+
+        else:
+
+
+
+    if resp2 ==3:
+        print("•–––––– ʟɪꜱᴛᴀ ᴅᴇ ᴊᴏɢᴏꜱ ᴄᴀᴅᴀꜱᴛʀᴀᴅᴏꜱ ––––––•")
+        print('\n')
+
+        if len (Jogo) == 0:
+            print("Nenhum jogo cadastrado encontrado")
+
+        else:
 
 
 

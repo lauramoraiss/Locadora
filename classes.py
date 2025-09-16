@@ -49,6 +49,9 @@ class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
         self.__alugados = []
 
 
+    def GetNome (self):
+
+
     def alugar(self, item:Item):
         if item.alugar():
             self.itensAlugados.append(item)
