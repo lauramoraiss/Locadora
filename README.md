@@ -6,7 +6,7 @@
 ![Image](https://github.com/user-attachments/assets/7060fd67-1226-4670-9744-07fccf5179b4)
 
 
-**pppppppppppppppppppppppppppppppppppppppppppppp** <br>
+**Para o início da criação do código foi necessário realizar a criação de classes para facilitar o desenvolvimento do código, assim também como para ficar uma organização maior e mais agradável** <br>
 
     class Item:
       def __init__ (self, código: int, título: str):
