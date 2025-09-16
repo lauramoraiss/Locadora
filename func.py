@@ -6,6 +6,7 @@ def cadastro():
     while True:
         os.system('cls')
         print("*╚═══❖•ೋ° 𝑪𝑨𝑫𝑨𝑺𝑻𝑹𝑶 °ೋ•❖═══╝*")
+        print('')
         print("\n Selecione o que deseja cadastrar:")
         print("\n1 - Cliente \n2 - Filme \n3 - Jogo ")
         resp1 = int(input("\n -----> "))
@@ -52,6 +53,15 @@ def cadastro():
 def listar():
     os.system('cls')
     print("*╚═══❖•ೋ° 𝑳𝑰𝑺𝑻𝑨𝑹 °ೋ•❖═══╝*")
+    print('')
+    print("\n Selecione o que deseja listar: ")
+    print("\n1 - Clientes \n2 - Filmes \n3 - Jogos")
+    resp2 = int(input("\n -----> "))
+
+    
+    if resp2 == 1:
+        print("")
+
 
 
 
