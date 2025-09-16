@@ -12,16 +12,39 @@ def cadastro():
 
         if resp1 == 1:
             print("•–––––– ᴠᴏᴄê ꜱᴇʟᴇᴄɪᴏɴᴏᴜ ᴄʟɪᴇɴᴛᴇ ––––––•")
+            print('\n')
             nome = input("\nInsira seu nome: ")
+            print('')
+            idade = int("\nInsira sua idade: ")
+            print('')
+            cpf = int(input("\nInsira seu cpf: "))
+            print('')
+            cidade = input("\nInsira sua cidade: ")
+            print('')
+            estado = input("\nInsira seu estado: ")
 
 
         
 
         if resp1 == 2:
-            print("•–––––– ᴠᴏᴄê ꜱᴇʟᴇᴄɪᴏɴᴏᴜ ɪᴛᴇᴍ ––––––•")
-            nome_item = input("\n Insira o nome do filme: ")
+            print("•–––––– ᴠᴏᴄê ꜱᴇʟᴇᴄɪᴏɴᴏᴜ ꜰɪʟᴍᴇ ––––––•")
+            print('\n')
+            nome_filme = input("\nInsira o nome do filme: ")
+            print('')
+            genero_filme = input("\nInsira o gênero do filme: ")
+            print('')
+            duração = int(input("\nInsira o tempo de duração do filme(minutos): "))
 
 
+
+        if resp1 == 3:
+            print("•–––––– ᴠᴏᴄê ꜱᴇʟᴇᴄɪᴏɴᴏᴜ ᴊᴏɢᴏ ––––––•")
+            print('\n')
+            nome_jogo = input("\nInsira o nome do jogo: ")
+            print('')
+            plataforma = input("\nInsira a plataforma onde reside esse jogo: ")
+            print('')
+            faixa_etaria = input("\nInsira a faixa etária do jogo: ")
 
     
 
