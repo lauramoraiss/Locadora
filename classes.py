@@ -40,6 +40,12 @@ class Jogo(Item):
         self.__faixaetaria = faixa_etária
 
 
+    def GetPlataforma (self):
+        return self.__plataforma
+    
+    def GetFaixaetaria (self):
+        return self.__faixaetaria
+
 
 
 class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
@@ -50,6 +56,14 @@ class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
 
 
     def GetNome (self):
+        return self.__nome
+    
+    def GetCpf (self):
+        return self.__cpf
+
+
+    def GetAlugados (self):
+        return self.__alugados
 
 
     def alugar(self, item:Item):

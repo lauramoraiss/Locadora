@@ -1,4 +1,5 @@
-from classes import *
+import os
+
 from func import *
 
 while True:
