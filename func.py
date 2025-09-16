@@ -7,7 +7,7 @@ def cadastro():
         os.system('cls')
         print("*╚═══❖•ೋ° 𝑪𝑨𝑫𝑨𝑺𝑻𝑹𝑶 °ೋ•❖═══╝*")
         print("\n Selecione o que deseja cadastrar:")
-        print("\n1 - Cliente \n2 - Item ")
+        print("\n1 - Cliente \n2 - Filme \n3 - Jogo ")
         resp1 = int(input("\n -----> "))
 
         if resp1 == 1:
@@ -19,7 +19,7 @@ def cadastro():
 
         if resp1 == 2:
             print("•–––––– ᴠᴏᴄê ꜱᴇʟᴇᴄɪᴏɴᴏᴜ ɪᴛᴇᴍ ––––––•")
-            nome_item = input("\n Insira o nome do item: ")
+            nome_item = input("\n Insira o nome do filme: ")
 
 
 
