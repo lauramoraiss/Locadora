@@ -71,6 +71,8 @@ def listar():
             print("Nenhum filme cadastrado encontrado")
 
         else:
+            for chave, valor in Filme.items():
+                print(f"")
 
 
 
@@ -82,6 +84,8 @@ def listar():
             print("Nenhum jogo cadastrado encontrado")
 
         else:
+            for chave, valor in Jogo.items():
+                print(f"")
 
 
 

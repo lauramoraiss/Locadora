@@ -3,25 +3,29 @@ class Item:
     def __init__ (self, código: int, título: str):
         self.__codigo = código
         self.__titulo = título
-        self.__disponibiliade = True 
+        self.__disponivel = True 
 
 
     def Pegar(self):
-        if self.disponivel:
-            self.disponivel = False
+        if self.__disponivel:
+            self.__disponivel = False
             return True
         return False
             
 
 
-
     def Largar(self):
-        if self.disponivel:
-            self.disponivel = True
+        if self.__disponivel:
+            self.__disponivel = True
             return True
         return False
-
-
+    
+    
+    def GetCódigo (self):
+        return self.__codigo
+    
+    def GetTítulo (self):
+        return self.__titulo
 
 
 class Filme(Item):
@@ -30,6 +34,11 @@ class Filme(Item):
         self.__genero = gênero
         self.__duracao = duração
 
+    def GetGênero (self):
+        return self.__genero
+    
+    def GetDuração (self):
+        return self.__duracao
 
 
 
@@ -55,6 +64,23 @@ class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
         self.__alugados = []
 
 
+    def alugar(self, item:Item):
+        if item.alugar():
+            self.__itensAlugados.append(item)
+            return True
+        return False
+    
+    def devolução(self, item:Item):
+        if item.devol():
+            self.__itensAlugados.append(item)
+            return True
+        return False
+    
+
+    def listaritens(self):
+        return [Item.titulo for item in self.__itensAlugados]
+    
+    
     def GetNome (self):
         return self.__nome
     
@@ -63,24 +89,7 @@ class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
 
 
     def GetAlugados (self):
-        return self.__alugados
-
-
-    def alugar(self, item:Item):
-        if item.alugar():
-            self.itensAlugados.append(item)
-            return True
-        return False
-    
-    def devolução(self, item:Item):
-        if item.devol():
-            self.itensAlugados.append(item)
-            return True
-        return False
-    
-
-    def listaritens(self):
-        return [Item.titulo for item in self.itens.Alugados]
+        return self.__ItensAlugados
 
 
 
@@ -120,3 +129,10 @@ class Locadora:
                 print(f'- {item.codigo} | {item.titulo} ({status})')
             else:
                 print("Nenhum item cadastrado")
+
+
+    def GetClientes (self):
+        return self.__clientes
+    
+    def GetItens (self):
+        return self.__itens
