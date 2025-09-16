@@ -17,6 +17,7 @@ def cadastro():
             nome = input("\nInsira seu nome: ")
             print('')
             cpf = int(input("\nInsira seu cpf: "))
+
             
 
         if resp1 == 2:
@@ -60,7 +61,7 @@ def listar():
 
         else:
             for chave, valor in Cliente.items():
-                print(f"{chave}° - \t")
+                print(f"{chave}° - \t{valor.GetNome()}\n\t{valor.GetCpf()}\n\t{valor.GetAlugados()}")
 
 
     if resp2 == 2:
@@ -72,7 +73,7 @@ def listar():
 
         else:
             for chave, valor in Filme.items():
-                print(f"")
+                print(f"{chave}° - \t{valor.Get}")
 
 
 
@@ -85,7 +86,7 @@ def listar():
 
         else:
             for chave, valor in Jogo.items():
-                print(f"")
+                print(f"{chave}° - \t{valor.Get}")
 
 
 
@@ -93,6 +94,7 @@ def listar():
 def registrar():
     os.system('cls')
     print("*╚═══❖•ೋ° 𝑹𝑬𝑮𝑰𝑺𝑻𝑹𝑨𝑹 °ೋ•❖═══╝*")
+    print('')
 
 
 
@@ -104,3 +106,4 @@ def registrar():
 def alugar_devolver():
     os.system('cls')
     print("*╚═══❖•ೋ° 𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑰𝑻𝑬𝑵𝑺 𝑫𝑰𝑺𝑷𝑶𝑵Í𝑽𝑬𝑰𝑺 °ೋ•❖═══╝*")
+    print('')
