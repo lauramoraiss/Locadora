@@ -111,7 +111,7 @@
 ![Image](https://github.com/user-attachments/assets/7060fd67-1226-4670-9744-07fccf5179b4)
 
 
-**pppppppppppppppppppppppppppppppppppppppppppppppppppppppp** <br>
+**(introdução)** <br>
 
 (código)
 
@@ -125,6 +125,6 @@
 ![Image](https://github.com/user-attachments/assets/7060fd67-1226-4670-9744-07fccf5179b4)
 
 
-**ppppppppppppppppppppppppppppppppppppp** <br>
+**(introdução)** <br>
 
 (código)
