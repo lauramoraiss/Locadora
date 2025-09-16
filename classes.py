@@ -64,21 +64,21 @@ class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
         self.__alugados = []
 
 
-    def alugar(self, item:Item):
-        if item.alugar():
-            self.__itensAlugados.append(item)
+    def locar (self, item:Item):
+            item.alugar()
+            self.__alugados.append(item)
+
+
+    def devolver (self, item:Item):
+        if item in self.__alugados:
+            item.devolver()
+            self.__alugados.remove(item)
             return True
         return False
-    
-    def devolução(self, item:Item):
-        if item.devol():
-            self.__itensAlugados.append(item)
-            return True
-        return False
-    
+
 
     def listaritens(self):
-        return [Item.titulo for item in self.__itensAlugados]
+        return [Item.titulo for item in self.__alugados]
     
     
     def GetNome (self):
@@ -89,7 +89,7 @@ class Cliente: #A classe Cliente deve ser capaz de locar e devolver itens
 
 
     def GetAlugados (self):
-        return self.__ItensAlugados
+        return self.__alugados
 
 
 
