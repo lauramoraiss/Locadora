@@ -26,6 +26,7 @@ while True:
             case 0:
                 print("Saindo...")
                 os.system("pause")
+                break
             case _:
                 print("Escolha Inválida!")
                 os.system("pause")

@@ -107,3 +107,22 @@ def alugar_devolver():
     os.system('cls')
     print("*╚═══❖•ೋ° 𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑰𝑻𝑬𝑵𝑺 𝑫𝑰𝑺𝑷𝑶𝑵Í𝑽𝑬𝑰𝑺 °ೋ•❖═══╝*")
     print('')
+    print("Selecione quais itens disponíveis deseja saber: ")
+    print("\n1 - Filmes \n2 - Jogos")
+    resp3 = int(input("\n -----> "))
+
+
+
+    if resp3 == 1:
+        print("•–––––– ʟɪꜱᴛᴀ ᴅᴇ ꜰɪʟᴍᴇꜱ ᴅɪꜱᴘᴏɴíᴠᴇɪꜱ ––––––•")
+        print('\n')
+
+
+
+
+
+
+
+    if resp3 == 2:
+        print("•–––––– ʟɪꜱᴛᴀ ᴅᴇ ᴊᴏɢᴏꜱ ᴅɪꜱᴘᴏɴíᴠᴇɪꜱ ––––––•")
+        print('\n')
